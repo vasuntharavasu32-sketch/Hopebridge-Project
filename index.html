@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="HopeBridge Trust — Empowering Communities through education, healthcare, and opportunity across 12+ regions." />
+  <title>HopeBridge Trust | Empowering Communities</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">HopeBridge<span>Trust</span></div>
+      <div class="mobile-menu" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#involve">Get Involved</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#donation" class="donate-nav">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Empower Change, Transform Lives</h1>
+      <p>We bring education, healthcare, and opportunity to underserved communities across 12+ regions.</p>
+      <button class="cta-btn" id="heroDonateBtn">
+        Donate Now <i class="fas fa-heart"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Impact Stats -->
+  <div class="impact-stats">
+    <div class="container stats-grid">
+      <div class="stat-card"><h3 id="livesCount">5,342+</h3><p>Lives Impacted</p></div>
+      <div class="stat-card"><h3>12</h3><p>Regions Covered</p></div>
+      <div class="stat-card"><h3>47+</h3><p>Active Volunteers</p></div>
+      <div class="stat-card"><h3>₹2.4Cr</h3><p>Funds Deployed</p></div>
+    </div>
+  </div>
+
+  <!-- Mission & Vision -->
+  <section>
+    <div class="container">
+      <div class="mission-vision">
+        <div class="mission-card">
+          <i class="fas fa-bullseye" style="font-size:2rem; color:var(--primary);"></i>
+          <h3>Our Mission</h3>
+          <p>To create sustainable pathways out of poverty through education, health, and dignity.</p>
+        </div>
+        <div class="mission-card">
+          <i class="fas fa-eye" style="font-size:2rem; color:var(--primary);"></i>
+          <h3>Our Vision</h3>
+          <p>A world where every child has access to quality learning and healthcare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Active Campaigns -->
+  <section id="programs">
+    <div class="container">
+      <h2 class="section-title">Active Campaigns</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Stories of Hope</h2>
+      <div class="testimonials-grid" id="testimonialsContainer"></div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators -->
+  <div class="container trust-section">
+    <div class="trust-logos">
+      <span><i class="fas fa-hand-holding-heart"></i> ✅ Certified 80G/12A</span>
+      <span><i class="fas fa-chart-line"></i> ⭐ GreatNonprofits</span>
+      <span><i class="fab fa-google"></i> Google.org Partner</span>
+      <span><i class="fas fa-shield-alt"></i> GDPR Compliant</span>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About HopeBridge</h2>
+      <div class="about-grid">
+        <div>
+          <h3>📜 Our Legacy</h3>
+          <p>Founded in 2012, HopeBridge has grown from a grassroots initiative to a nationwide movement. With transparency and integrity as our pillars.</p>
+          <br />
+          <h3>⭐ Core Values</h3>
+          <p>Integrity, Compassion, Transparency, Innovation. 95% of funds go directly to programs.</p>
+        </div>
+        <div>
+          <h3>👥 Leadership Team</h3>
+          <p>
+            <strong>Dr. Meera Sharma</strong> – Founder & Chairperson<br />
+            <strong>Rajiv Mehta</strong> – Executive Director<br />
+            <strong>Anjali Nair</strong> – Head of Programs
+          </p>
+          <br />
+          <a href="#" class="text-link">📄 Download Annual Report 2024 →</a><br />
+          <a href="#" class="text-link">🔒 Tax Exemption Certificate (80G)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section id="involve" class="involve-section">
+    <div class="container">
+      <h2 class="section-title">Get Involved</h2>
+      <div class="involve-grid">
+        <div class="involve-card">
+          <h3>🙋 Volunteer Form</h3>
+          <form id="volunteerFormElem">
+            <input type="text" placeholder="Full Name" id="volName" required />
+            <input type="email" placeholder="Email Address" id="volEmail" required />
+            <select id="volInterest">
+              <option>Education Mentorship</option>
+              <option>Healthcare Outreach</option>
+              <option>Fundraising Events</option>
+            </select>
+            <button type="submit">Apply to Volunteer</button>
+          </form>
+          <div id="volMessage"></div>
+        </div>
+        <div class="involve-card">
+          <h3>🤝 Corporate Partnerships</h3>
+          <p>Partner with us for CSR initiatives and amplify your social impact. We offer end-to-end project reporting.</p>
+          <p><strong>📢 Careers:</strong> We're hiring! <a href="#">Internships & Field Coordinators →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donation">
+    <div class="container">
+      <h2 class="section-title">Make a Difference Today</h2>
+      <div class="donation-box">
+        <div class="donation-toggle">
+          <button id="oneTimeBtn" class="toggle-btn">One-time</button>
+          <button id="recurringBtn" class="toggle-btn active">Monthly (Recurring)</button>
+        </div>
+        <div id="donationTypeText" class="donation-type-text">💚 Monthly giving provides sustained support</div>
+        <div class="donation-amounts" id="donationAmounts">
+          <div data-amt="500" class="amount-option">₹500 <small>(provides books)</small></div>
+          <div data-amt="1000" class="amount-option">₹1000 <small>(feeds a child/month)</small></div>
+          <div data-amt="2500" class="amount-option">₹2500 <small>(healthcare kit)</small></div>
+          <div data-amt="5000" class="amount-option">₹5000 <small>(education sponsorship)</small></div>
+        </div>
+        <input type="text" id="customAmount" placeholder="Custom amount (₹)" />
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa fa-2x"></i>
+          <i class="fab fa-cc-mastercard fa-2x"></i>
+          <i class="fab fa-paypal fa-2x"></i>
+          <i class="fas fa-qrcode fa-2x"></i>
+          <span>UPI / GPay</span>
+        </div>
+        <button id="processDonateBtn" class="donate-submit-btn">Donate Securely →</button>
+        <p class="secure-note">🔒 SSL Encrypted | 100% Secure Donation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Media -->
+  <section id="news">
+    <div class="container">
+      <h2 class="section-title">Stories & Updates</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <h3>📰 Latest: Mobile Health Camp in Rural Rajasthan</h3>
+          <p>Over 1200 children received vaccinations & dental checkups.</p>
+          <div class="news-social">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&auto=format"
+            alt="Mobile Health Camp"
+            class="news-img"
+          />
+        </div>
+        <div class="news-card">
+          <h3>📸 Gallery: Education for All</h3>
+          <div class="gallery-icons">
+            <i class="fas fa-image fa-2x"></i>
+            <i class="fas fa-video fa-2x"></i>
+            <i class="fas fa-photo-video fa-2x"></i>
+          </div>
+          <p>Watch our new video series: "Champions of Change"</p>
+          <button class="cta-btn blog-btn">Read Full Blog</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Reach Out</h2>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form id="contactForm">
+              <input type="text" placeholder="Your Name" id="contactName" required />
+              <input type="email" placeholder="Email" id="contactEmail" required />
+              <textarea rows="3" placeholder="Your message"></textarea>
+              <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="formFeedback"></div>
+          </div>
+        </div>
+        <div class="contact-info">
+          <h3>📍 Office Location</h3>
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <span>New Delhi, India | Google Maps Integration Live</span>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+          <p>📞 +91 98765 43210 | ✉️ hello@hopebridge.org</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 HopeBridge Trust — Transparency, Impact, Compassion. |
+        <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
